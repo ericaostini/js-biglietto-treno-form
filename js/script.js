@@ -22,7 +22,7 @@ button.addEventListener("click", function(){
         alert("inserisci i valori mancanti!");
     } else{
         const nominativo = document.getElementById("nominativo").innerHTML = `
-        <h4>Nome passeggero</h4>
+        <h6>Nome passeggero</h6>
         <p> ${name} </p>
     `;
         const offerta = document.getElementById("offerta").innerHTML = `
