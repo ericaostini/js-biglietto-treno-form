@@ -4,9 +4,9 @@ const buttonAnnulla = document.querySelector(".btn-outline-light");
 console.log(buttonAnnulla);
 
 buttonAnnulla.addEventListener("click", function(){
-    const name = document.getElementById("name").value = " ";
-    const km = document.getElementById("km").value = " ";
-    const eta = document.getElementById("eta").value = " ";
+    const name = document.getElementById("name").value = "";
+    const km = document.getElementById("km").value = "";
+    const eta = document.getElementById("eta").value = "";
     biglietto.classList.add("d-none");
 })
 

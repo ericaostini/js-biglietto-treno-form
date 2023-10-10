@@ -3,7 +3,7 @@ In questo programma verrà calcolato il prezzo del biglietto del treno in base a
 
 Programma inizialmente chiederà all'utente di inserire Nome e Cognome, i km che vuole percorrere e la fascia d'età che lo rappresenta. In caso di mancato inserimento verrà visualizzato un alert che avvisa l'errore. 
 
-Una volta inserito i dati, attraverso il codice javascript, questi verrano riportati nella sezione sottostanze "Il tuo biglietto" inizialmente non visualizzata. 
+Una volta inserito i dati, attraverso il codice javascript, questi verrano riportati nella sezione sottostante "Il tuo biglietto" inizialmente non visualizzata. 
 * Nome passeggero
 * Offerta
 * Carozza
