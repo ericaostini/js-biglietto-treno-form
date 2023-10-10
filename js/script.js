@@ -1,6 +1,6 @@
 const button = document.querySelector(".btn-secondary");
 console.log(button);
-const buttonAnnulla = document.querySelector(".btn-danger");
+const buttonAnnulla = document.querySelector(".btn-outline-light");
 console.log(buttonAnnulla);
 
 buttonAnnulla.addEventListener("click", function(){
