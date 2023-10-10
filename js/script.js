@@ -12,6 +12,13 @@ button.addEventListener("click", function(){
     console.log(name);
     if (name === "" || km === "" || eta === ""){
         alert("inserisci i valori mancanti!");
+    } else{
+        const biglietto = document.getElementById("biglietto");
+        const passeggero = biglietto.querySelector("div");
+        passeggero.innerHTML = `
+            <h4>Nome passeggero</h4>
+            <p> ${name} </p>
+        `;
     }
 });
 
