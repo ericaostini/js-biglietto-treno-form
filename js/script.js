@@ -14,3 +14,9 @@ button.addEventListener("click", function(){
         alert("inserisci i valori mancanti!");
     }
 });
+
+buttonAnnulla.addEventListener("click", function(){
+    const name = document.getElementById("name").value = " ";
+    const km = document.getElementById("km").value = " ";
+    const eta = document.getElementById("eta").value = " ";
+})
