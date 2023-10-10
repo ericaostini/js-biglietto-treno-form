@@ -22,8 +22,8 @@ button.addEventListener("click", function(){
         alert("inserisci i valori mancanti!");
     } else{
         const nominativo = document.getElementById("nominativo").innerHTML = `
-        <h6>Nome passeggero</h6>
-        <p> ${name} </p>
+        <h6 class = "fw-bolder">Nome passeggero</h6>
+        <p class = "fw-bolder"> ${name} </p>
     `;
         const offerta = document.getElementById("offerta").innerHTML = `
         <h6>Offerta</h6>
@@ -48,8 +48,8 @@ button.addEventListener("click", function(){
         console.log(costoViaggio);
         let decimalCost = costoViaggio.toFixed(2);
         const costo = document.getElementById("costo").innerHTML = `
-        <h6>Costo Biglietto</h6>
-        <p>${decimalCost}</p>
+        <h6 class = "fw-bolder">Costo Biglietto</h6>
+        <p class = "fw-bolder"">${decimalCost} &euro;</p>
         `;
         biglietto.classList.remove("d-none");
 });
