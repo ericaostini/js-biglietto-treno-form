@@ -1,5 +1,3 @@
-
-
 const button = document.querySelector(".btn-secondary");
 console.log(button);
 const buttonAnnulla = document.querySelector(".btn-danger");
@@ -23,8 +21,30 @@ button.addEventListener("click", function(){
         <h6>Offerta</h6>
         <p> ${eta}</p>
     `;
+        const carrozza = document.getElementById("carrozza");
+        const nCarrozza = carrozza.querySelector("div").innerHTML =
+        Math.floor(Math.random() * 10);
+        const codice = document.getElementById("codice");
+        const cp = codice.querySelector("div").innerHTML =
+        Math.floor(Math.random() * 99999) + 10000;
     }
+        const pFisso = 0.21;
+        let costoViaggio = pFisso * km;
+        if (eta === "Biglietto Under18"){
+            costoViaggio = (costoViaggio - (costoViaggio * 20/100));
+        } else if(eta === "Biglietto Over65"){
+            costoViaggio = (costoViaggio - (costoViaggio * 40/100))
+        } else {
+            costoViaggio;
+        }
+        console.log(costoViaggio);
+        let decimalCost = costoViaggio.toFixed(2);
+        const costo = document.getElementById("costo").innerHTML = `
+        <h6>Costo Biglietto</h6>
+        <p>${decimalCost}</p>
+        `;
 });
+
 
 buttonAnnulla.addEventListener("click", function(){
     const name = document.getElementById("name").value = " ";
