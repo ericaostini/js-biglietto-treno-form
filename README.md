@@ -1,6 +1,7 @@
 # Biglietto Treno 
 In questo programma verrà calcolato il prezzo del biglietto del treno in base ai km percorsi e all'età del passeggiero. 
 
+Programma inizialmente chiederà all'utente di inserire Nome e Cognome, i km che vuole percorrere e la fascia d'età che lo rappresenta. In caso di mancato inserimento verrà visualizzato un alert che avvisa l'errore. 
 ------
 ### Calcolo il prezzo del tuo biglietto per km 
 
