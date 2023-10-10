@@ -3,10 +3,18 @@ console.log(button);
 const buttonAnnulla = document.querySelector(".btn-danger");
 console.log(buttonAnnulla);
 
+buttonAnnulla.addEventListener("click", function(){
+    const name = document.getElementById("name").value = " ";
+    const km = document.getElementById("km").value = " ";
+    const eta = document.getElementById("eta").value = " ";
+    biglietto.classList.add("d-none");
+})
+
 button.addEventListener("click", function(){
     const name = document.getElementById("name").value;
     const km = document.getElementById("km").value;
     const eta = document.getElementById("eta").value;
+    const biglietto = document.getElementById("biglietto");
     console.log(km);
     console.log(eta);
     console.log(name);
@@ -43,11 +51,5 @@ button.addEventListener("click", function(){
         <h6>Costo Biglietto</h6>
         <p>${decimalCost}</p>
         `;
+        biglietto.classList.remove("d-none");
 });
-
-
-buttonAnnulla.addEventListener("click", function(){
-    const name = document.getElementById("name").value = " ";
-    const km = document.getElementById("km").value = " ";
-    const eta = document.getElementById("eta").value = " ";
-})
